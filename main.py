@@ -27,7 +27,7 @@ headers = requests.utils.default_headers()
 
 headers.update(
     {
-        'User-Agent': '0x HH 1.0', # lol
+        'User-Agent': '0x HH 1.0' # lol
     }
 )
 
@@ -40,7 +40,7 @@ lcount = 0
 while True:
     lcount +=1
     clear()
-    print("Sending attack to {} for 600 seconds --> Loop Count: {}\n\n".format(ipaddr, lcount))
+    print("Sending attack to {} for {} seconds --> Loop Count: {}\n\n".format(ipaddr, time, lcount))
     response = requests.get(api_url, headers=headers)
     data = response.text
     print(data)
